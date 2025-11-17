@@ -1,16 +1,33 @@
 "use client";
 import React from "react";
-// defensive import so missing icons won't crash the render
-import * as Lucide from "lucide-react";
 import { m } from "framer-motion";
 
-/**
- * Fallback small functional components when an icon is not exported by lucide-react.
- * This prevents "Element type is invalid" runtime errors.
- */
-const GraduationCap = (Lucide as any).GraduationCap ?? (() => <span aria-hidden>🎓</span>);
-const CertificateIcon = (Lucide as any).Certificate ?? (() => <span aria-hidden>📜</span>);
-const Globe = (Lucide as any).Globe ?? (() => <span aria-hidden>🌐</span>);
+/* Small inline SVG icon components to avoid lucide-react import issues.
+   These are minimal, accessible, and dependency-free. */
+const GraduationCap = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg aria-hidden viewBox="0 0 24 24" width="20" height="20" {...props}>
+    <path fill="currentColor" d="M12 2L1 7l11 5 9-4.09V13h2V7L12 2z" />
+    <path fill="currentColor" d="M11 13v7h2v-7h-2z" />
+  </svg>
+);
+
+const CertificateIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg aria-hidden viewBox="0 0 24 24" width="20" height="20" {...props}>
+    <rect x="2" y="3" width="20" height="14" rx="1" ry="1" fill="none" stroke="currentColor" strokeWidth="1.5"/>
+    <path d="M8 8h8" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/>
+    <path d="M8 11h8" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/>
+    <circle cx="18" cy="18" r="3" fill="currentColor"/>
+    <path d="M18 16v2l1 1" stroke="#fff" strokeWidth="0.9" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+);
+
+const GlobeIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg aria-hidden viewBox="0 0 24 24" width="20" height="20" {...props}>
+    <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" strokeWidth="1.5"/>
+    <path d="M2 12h20" stroke="currentColor" strokeWidth="1" strokeLinecap="round"/>
+    <path d="M12 2a15 15 0 0 1 0 20" stroke="currentColor" strokeWidth="1" strokeLinecap="round"/>
+  </svg>
+);
 
 export default function Formation() {
   const education = [
@@ -37,7 +54,7 @@ export default function Formation() {
     },
   ];
 
-  const certifications = [
+    const certifications = [
     {
       name: "Google Cybersecurity Professional Certificate",
       provider: "Google / Coursera",
@@ -46,6 +63,40 @@ export default function Formation() {
     {
       name: "IBM Cybersecurity Analyst Professional Certificate",
       provider: "IBM / Coursera",
+      year: "2024",
+    },
+
+    // -----------------------------
+    // ⭐ Added Certifications
+    // -----------------------------
+    {
+      name: "CyberSecurity Advanced Certificate",
+      provider: "IBM / Coursera",
+      year: "2025",
+    },
+    {
+      name: "Practical Approach to CyberSecurity",
+      provider: "TCS iON",
+      year: "2025",
+    },
+    {
+      name: "Pre Security Learning Path",
+      provider: "TryHackMe",
+      year: "2025",
+    },
+    {
+      name: "Web Fundamentals Learning Path",
+      provider: "TryHackMe",
+      year: "2025",
+    },
+    {
+      name: "Access Control Concepts",
+      provider: "ISC2 / Coursera",
+      year: "2024",
+    },
+    {
+      name: "Network Security",
+      provider: "ISC2 / Coursera",
       year: "2024",
     },
   ];

@@ -21,13 +21,6 @@ const CertificateIcon = (props: React.SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-const GlobeIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg aria-hidden viewBox="0 0 24 24" width="20" height="20" {...props}>
-    <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" strokeWidth="1.5"/>
-    <path d="M2 12h20" stroke="currentColor" strokeWidth="1" strokeLinecap="round"/>
-    <path d="M12 2a15 15 0 0 1 0 20" stroke="currentColor" strokeWidth="1" strokeLinecap="round"/>
-  </svg>
-);
 
 export default function Formation() {
   const education = [

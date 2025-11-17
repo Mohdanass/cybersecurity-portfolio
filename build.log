@@ -1,0 +1,11 @@
+
+> cybersecurity-portfolio-template@1.0.0 build
+> next build
+
+   ▲ Next.js 15.5.5
+   - Experiments (use with caution):
+     · optimizePackageImports
+
+   Creating an optimized production build ...
+ ⚠ Found lockfile missing swc dependencies, patching...
+ ⚠ Lockfile was successfully patched, please run "npm install" to ensure @next/swc dependencies are downloaded
