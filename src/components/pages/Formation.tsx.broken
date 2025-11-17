@@ -1,0 +1,120 @@
+
+import React from "react";
+
+export default function Formation() {
+  const education = [
+    {
+      degree: "Bachelor of Computer Applications (BCA)",
+      school: "Yenepoya University",
+      period: "2022 – 2025",
+      summary:
+        "Built strong foundation in computer science, networking, programming, and information security concepts.",
+    },
+    {
+      degree: "Web Development Training",
+      school: "NxtWave",
+      period: "2024 – Present",
+      summary:
+        "Learning full-stack development including JavaScript, React, Node.js, and modern web technologies.",
+    },
+    {
+      degree: "Advanced Cybersecurity Advanced Penetration Testing (CPENT Student) VAPT Training",
+      school: "Ehackify Cybersecurity Research & Training",
+      period: "2025 – Present",
+      summary:
+        "Deep training in red team methodologies, exploitation, VAPT, OSINT, Android security, and advanced adversary techniques.",
+    },
+  ];
+
+  const certifications = [
+    {
+      name: "Google Cybersecurity Professional Certificate",
+      provider: "Google / Coursera",
+      year: "2024",
+    },
+    {
+      name: "IBM Cybersecurity Analyst Professional Certificate",
+      provider: "IBM / Coursera",
+      year: "2024",
+    },
+    {
+      name: "IBM Advanced Certificate in Cybersecurity",
+      provider: "IBM",
+      year: "2025",
+    },
+    {
+      name: "TCS iON – Practical Approach to Cybersecurity",
+      provider: "TCS iON",
+      year: "2024",
+    },
+    {
+      name: "eJPT (eLearnSecurity Junior Penetration Tester)",
+      provider: "INE Security",
+      year: "Coming Soon",
+    },
+    {
+      name: "TryHackMe Cybersecurity Training",
+    {
+      name: "Pre-Security Learning Path",
+      provider: "TryHackMe",
+      year: "2025",
+    },
+    {
+      name: "Pre-Security Learning Path",
+    {
+      name: "Web Fundamentals",
+      provider: "TryHackMe",
+      year: "2025",
+    },
+      provider: "TryHackMe",
+      year: "2024",
+    },
+      provider: "TryHackMe",
+      year: "2025 – Present",
+    },
+    {
+      provider: "SMEClabs",
+      year: "2024",
+    },
+    {
+      provider: "EYEQDOTNET Pvt Ltd",
+      year: "2025",
+    },
+    {
+      provider: "Commissioner of Police, Kochi",
+      year: "2025",
+    },
+  ];
+
+  return (
+    <section id="formation" className="space-y-10">
+      <h2 className="text-3xl font-bold">Education & Certifications</h2>
+
+      <div className="space-y-8">
+        <h3 className="text-2xl font-semibold">Education</h3>
+
+        {education.map((item, index) => (
+          <div key={index} className="border-l-4 border-cyber-cyan pl-4">
+            <h4 className="text-xl font-semibold">{item.degree}</h4>
+            <p className="text-gray-400">{item.school} • {item.period}</p>
+            <p className="mt-2 text-gray-300">{item.summary}</p>
+          </div>
+        ))}
+      </div>
+
+      <div className="space-y-6 mt-10">
+        <h3 className="text-2xl font-semibold">Certifications</h3>
+        <ul className="space-y-3">
+          {certifications.map((cert, index) => (
+            <li key={index} className="border-l-4 border-cyber-green pl-4">
+              <p className="text-gray-300">
+                <span className="font-semibold">{cert.name}</span>
+                <span className="text-gray-400"> — {cert.provider} ({cert.year})</span>
+              </p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
+}

@@ -24,7 +24,7 @@ export const metadata: Metadata = generateSEO({
 export default function Home() {
   // English translations
   const homeTranslations = {
-    badge: 'Blue Team | Defensive Security',
+    badge: 'Offensive Security | Defensive Security',
     title: siteConfig.author.name,
     codename: siteConfig.codename,
     tagline: siteConfig.author.tagline,

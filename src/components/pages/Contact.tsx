@@ -16,21 +16,21 @@ const contactMethods: ContactMethod[] = [
   {
     name: 'LinkedIn',
     icon: <Linkedin size={24} />,
-    href: 'https://linkedin.com/in/your-linkedin-username',
+    href: 'https://www.linkedin.com/in/muhammedanas-m-p',
     description: 'Connect for professional networking',
     color: 'border-cyber-cyan/30 hover:border-cyber-cyan hover:shadow-glow-cyan text-cyber-cyan'
   },
   {
     name: 'GitHub',
     icon: <Github size={24} />,
-    href: 'https://github.com/yourusername',
+    href: 'https://github.com/Mohdanass',
     description: 'View my open source projects',
     color: 'border-cyber-gray/30 hover:border-cyber-gray-light hover:shadow-glow-cyan text-cyber-gray-light'
   },
   {
     name: 'Email',
     icon: <Mail size={24} />,
-    href: 'mailto:your.email@example.com',
+    href: 'mailto:anasmp366@gmail.com',
     description: 'Send me a secure email',
     color: 'border-cyber-green/30 hover:border-cyber-green hover:shadow-glow-green text-cyber-green'
   }
@@ -122,7 +122,7 @@ export default function ContactSection() {
             <div className="flex items-center gap-4">
               <div className="h-px w-16 bg-gradient-to-r from-transparent to-cyber-cyan/30" />
               <TypewriterAnimation
-                text="by ~/yourusername"
+                text="by ~/MohdAnas"
                 speed={150}
                 className="text-2xl font-bold"
                 delay={1000}

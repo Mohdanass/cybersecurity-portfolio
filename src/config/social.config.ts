@@ -11,11 +11,11 @@ export const socialConfig = {
   /**
    * LinkedIn profile
    * Get your LinkedIn username from your profile URL:
-   * https://linkedin.com/in/YOUR-USERNAME
+   * 'https://www.linkedin.com/in/muhammedanas-m-p',
    */
   linkedin: {
-    username: 'your-linkedin-username',
-    url: 'https://linkedin.com/in/your-linkedin-username',
+    username: 'Muhammed Anas',
+    url: 'https://www.linkedin.com/in/muhammedanas-m-p',
     label: 'LinkedIn',
   },
 
@@ -24,8 +24,8 @@ export const socialConfig = {
    * Your GitHub username
    */
   github: {
-    username: 'your-github-username',
-    url: 'https://github.com/your-github-username',
+    username:  'Mohdanass',
+    url: 'https://github.com/Mohdanass',
     label: 'GitHub',
   },
 
@@ -46,8 +46,8 @@ export const socialConfig = {
    */
 
   // email: {
-  //   address: 'your.email@example.com',
-  //   url: 'mailto:your.email@example.com',
+  //   address: 'anasmp366@gmail.com',
+  //   url: 'mailto:anasmp366@gmail.com',
   //   label: 'Email',
   // },
 
@@ -58,8 +58,8 @@ export const socialConfig = {
   // },
 
   // medium: {
-  //   username: 'yourusername',
-  //   url: 'https://medium.com/@yourusername',
+  //   username: 'anasmp366',
+  //   url: 'https://medium.com/@anasmp366',
   //   label: 'Medium',
   // },
 } as const;

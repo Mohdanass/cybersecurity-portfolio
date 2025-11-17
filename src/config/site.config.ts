@@ -12,15 +12,15 @@ export const siteConfig = {
    * Site identity and branding
    * Replace with your name and professional details
    */
-  name: 'Your Name - Cybersecurity Professional',
-  codename: 'your-handle', // Your preferred username/handle
+  name: 'Muhammed Anas - Cybersecurity Professional',
+  codename: 'mohdanas', // Your preferred username/handle
   author: {
-    name: 'Your Full Name',
-    codename: 'your-handle',
-    jobTitle: 'Cybersecurity Specialist | Blue Team', // Your professional title
-    tagline: 'Your professional tagline or motto',
-    description: 'Your professional bio. Describe your background, expertise, and what makes you unique in the cybersecurity field.',
-    organization: 'Your Organization or Independent',
+    name: 'Muhammed Anas',
+    codename: 'mohdanas',
+    jobTitle: "Cybersecurity Researcher",
+    tagline: 'Breaking security. Building security.',
+    description: 'Cybersecurity researcher and web developer specializing in penetration testing, adversary emulation, bug bounty, and defensive security engineering. Skilled in Nmap, Burp Suite, Nessus, hydra, gobuster, Metasploit, Linux, SIEM,and cloud security.',
+    organization: ' Independent',
   },
 
   /**
@@ -28,8 +28,8 @@ export const siteConfig = {
    * Update with your actual domain
    */
   urls: {
-    base: 'https://yourdomain.com',
-    canonical: 'https://yourdomain.com',
+    base: 'https://mohdanass.github.io',
+    canonical: 'https://mohdanass.github.io',
   },
 
   /**
@@ -37,10 +37,13 @@ export const siteConfig = {
    * Customize for better search engine optimization
    */
   seo: {
-    title: 'Your Name - Cybersecurity Professional Portfolio',
+    title: 'Muhammed Anas - Cybersecurity Professional Portfolio',
     description: 'Professional portfolio showcasing cybersecurity projects, blog posts, and expertise. Specializing in [your specializations].',
     keywords: [
+      'bug bounty',
       'cybersecurity',
+      'osint',
+      'ethical hacking',
       'blue team',
       'defensive security',
       'security analyst',
@@ -95,12 +98,14 @@ export const siteConfig = {
    */
   expertise: [
     'Cybersecurity',
-    'Blue Team Operations',
+    'Red Team Operations',
     'SIEM',
     'Incident Response',
     'Threat Hunting',
     'Security Operations Center',
     'Defensive Security',
+    'Offensive Security',
+    'Penetration Testing',
     // Add your specific expertise areas
   ],
 } as const;

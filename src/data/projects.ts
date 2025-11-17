@@ -15,53 +15,76 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: 'SIEM Analytics Dashboard',
+    title: 'Investigator Terminal – OSINT & Recon Toolkit',
     description:
-      'Enterprise security information and event management (SIEM) analytics dashboard with real-time threat detection, automated incident response workflows, and comprehensive security metrics visualization. Built with security-first principles including role-based access control, encrypted data transmission, and audit logging.',
-  image: '/images/site/blog-cover1.webp',
-    status: 'Example Project',
-    statusColor: 'bg-cyber-green',
-    tags: ['Python', 'Elastic Stack', 'Splunk', 'Security Analytics', 'Threat Detection', 'DevSecOps'],
-    links: {
-      github: 'https://github.com/yourusername/siem-dashboard',
-      demo: 'https://demo.example.com',
-    },
-  },
-  {
-    title: 'Automated Threat Intelligence Platform',
-    description:
-      'Open-source threat intelligence aggregation platform that collects, correlates, and analyzes indicators of compromise (IOCs) from multiple feeds. Includes MITRE ATT&CK mapping, automated threat scoring, and integration with popular security tools. Designed for SOC teams to enhance threat hunting capabilities.',
-  image: '/images/site/blog-cover2.webp',
-    status: 'Open Source',
-    statusColor: 'bg-cyber-cyan',
-    tags: ['Threat Intelligence', 'MITRE ATT&CK', 'Python', 'API Integration', 'SOC Tools', 'Security Automation'],
-    links: {
-      github: 'https://github.com/yourusername/threat-intel-platform',
-    },
-  },
-  {
-    title: 'Security Orchestration Automation',
-    description:
-      'Security orchestration, automation and response (SOAR) playbooks for common incident response scenarios. Automates repetitive security tasks including phishing analysis, malware triage, and vulnerability management. Integrates with leading SIEM, EDR, and ticketing systems for streamlined security operations.',
-  image: '/images/site/blog-cover1.webp',
+      'Custom-built OSINT and recon automation toolkit with modules for IP lookup, email lookup, phone intelligence, fake ID generator, breach rehashing, and bank lookup. Designed to support red-team reconnaissance and intelligence gathering workflows.',
+    image: '/images/projects/investigator-terminal.webp',
     status: 'Active Development',
     statusColor: 'bg-cyber-green',
-    tags: ['SOAR', 'Security Automation', 'Incident Response', 'Python', 'API', 'Integration'],
+    tags: ['Python', 'OSINT', 'Recon', 'Automation', 'CLI'],
     links: {
-      github: 'https://github.com/yourusername/soar-playbooks',
-      demo: 'https://demo.example.com',
+      github: 'https://github.com/Mohdanass',
+      demo: 'https://mohdanass.github.io',
     },
   },
   {
-    title: 'Blue Team Security Portfolio',
+    title: 'Web Application Pentesting Lab (DVWA & bWAPP)',
     description:
-      'Professional cybersecurity portfolio template with integrated blog system using MDX, modern Next.js architecture, and responsive design. Features technical articles on threat hunting, SIEM operations, incident response, and security operations with optimized static rendering and security-hardened configuration.',
-    image: 'current-site',
-    status: 'Production',
-    statusColor: 'bg-cyber-green',
-    tags: ['Next.js', 'MDX Blog', 'TypeScript', 'Security', 'SSG', 'Responsive'],
+      'Hands-on offensive security lab covering SQL Injection, XSS, CSRF, authentication bypass, command injection, and insecure file handling. Documented vulnerabilities, exploitation steps, and mitigation techniques using Burp Suite and manual payloads.',
+    image: '/images/projects/web-pentesting.webp',
+    status: 'Completed',
+    statusColor: 'bg-cyber-cyan',
+    tags: ['Web Security', 'SQLi', 'XSS', 'Burp Suite', 'Pentesting'],
     links: {
-      github: 'https://github.com/yourusername/portfolio',
+      github: 'https://github.com/Mohdanass',
+    },
+  },
+  {
+    title: 'SIEM Log Analysis & Detection Engineering Lab',
+    description:
+      'Blue-team project analyzing SSH brute force, SQLi attempts, XSS payloads, and Windows event logs using Wazuh/Splunk. Built custom detection rules, alerting pipelines, and dashboards for SOC-style monitoring.',
+    image: '/images/projects/siem-lab.webp',
+    status: 'Active Lab',
+    statusColor: 'bg-cyber-green',
+    tags: ['SIEM', 'Wazuh', 'Splunk', 'Blue Team', 'Log Analysis', 'Detection Engineering'],
+    links: {
+      github: 'https://github.com/Mohdanass',
+    },
+  },
+  {
+    title: 'PCAP Attack Analysis – Full Kill Chain Investigation',
+    description:
+      'Complete network forensics case examining attacker behavior across scanning, exploitation, reverse shell traffic, credential access, and command execution. Timeline reconstruction performed using Wireshark and manual packet analysis.',
+    image: '/images/projects/pcap-analysis.webp',
+    status: 'Completed',
+    statusColor: 'bg-cyber-cyan',
+    tags: ['Wireshark', 'Network Forensics', 'Incident Response', 'Blue Team'],
+    links: {
+      github: 'https://github.com/Mohdanass',
+    },
+  },
+  {
+    title: 'Linux & Windows Hardening Project',
+    description:
+      'System hardening project implementing secure SSH configuration, firewall policies, password rules, service isolation, audit logging, and Sysmon-based monitoring. Mapped defensive controls using MITRE ATT&CK techniques.',
+    image: '/images/projects/system-hardening.webp',
+    status: 'Completed',
+    statusColor: 'bg-cyber-green',
+    tags: ['Hardening', 'Blue Team', 'Linux Security', 'Windows Security', 'MITRE ATT&CK'],
+    links: {
+      github: 'https://github.com/Mohdanass',
+    },
+  },
+  {
+    title: 'Android Payload & RAT Analysis Lab (AhMyth + FatRat)',
+    description:
+      'Controlled lab testing of Android RAT payloads to understand C2 communication, network traffic patterns, persistence behavior, and defensive countermeasures. Includes analysis notes and PCAP-based investigation.',
+    image: '/images/projects/android-rat.webp',
+    status: 'Research',
+    statusColor: 'bg-cyber-cyan',
+    tags: ['Android Security', 'Red Team', 'Malware Analysis', 'RAT', 'C2'],
+    links: {
+      github: 'https://github.com/Mohdanass',
     },
   },
 ];
