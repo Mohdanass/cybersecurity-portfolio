@@ -19,7 +19,7 @@ export const siteConfig = {
     codename: 'mohdanas',
     jobTitle: "Cybersecurity Researcher",
     tagline: 'Breaking security. Building security.',
-    description: 'Cybersecurity researcher and web developer specializing in penetration testing, adversary emulation, bug bounty, and defensive security engineering. Skilled in Nmap, Burp Suite, Nessus, hydra, gobuster, Metasploit, Linux, SIEM,and cloud security.',
+    description: 'Offensive security researcher specializing in penetration testing, adversary emulation, and vulnerability discovery across web applications, APIs, Android platforms, enterprise networks, Active Directory environments, and cloud infrastructure. Skilled with Nmap, Burp Suite, Nessus, Hydra, Gobuster, Metasploit, SIEM platforms, and security automation using Python and JavaScript and cloud security.',
     organization: ' Independent',
   },
 
@@ -106,6 +106,9 @@ export const siteConfig = {
     'Defensive Security',
     'Offensive Security',
     'Penetration Testing',
+     'Active Directory',
+     'Api Pentesting',
+     'Android Pentesting',
     // Add your specific expertise areas
   ],
 } as const;

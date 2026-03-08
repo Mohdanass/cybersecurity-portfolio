@@ -15,76 +15,67 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: 'Investigator Terminal – OSINT & Recon Toolkit',
+    title: 'AI Integrated VAPT MCP Server',
     description:
-      'Custom-built OSINT and recon automation toolkit with modules for IP lookup, email lookup, phone intelligence, fake ID generator, breach rehashing, and bank lookup. Designed to support red-team reconnaissance and intelligence gathering workflows.',
-    image: '/images/projects/investigator-terminal.webp',
-    status: 'Active Development',
+      'AI-assisted Vulnerability Assessment and Penetration Testing (VAPT) automation server that integrates reconnaissance tools, vulnerability scanners, and AI analysis to prioritize security findings and generate structured pentesting reports.',
+    image: '/images/projects/ai-vapt-server.webp',
+    status: 'Research & Development',
     statusColor: 'bg-cyber-green',
-    tags: ['Python', 'OSINT', 'Recon', 'Automation', 'CLI'],
-    links: {
-      github: 'https://github.com/Mohdanass',
-      demo: 'https://mohdanass.github.io',
-    },
-  },
-  {
-    title: 'Web Application Pentesting Lab (DVWA & bWAPP)',
-    description:
-      'Hands-on offensive security lab covering SQL Injection, XSS, CSRF, authentication bypass, command injection, and insecure file handling. Documented vulnerabilities, exploitation steps, and mitigation techniques using Burp Suite and manual payloads.',
-    image: '/images/projects/web-pentesting.webp',
-    status: 'Completed',
-    statusColor: 'bg-cyber-cyan',
-    tags: ['Web Security', 'SQLi', 'XSS', 'Burp Suite', 'Pentesting'],
+    tags: ['AI Security', 'VAPT','Java', 'Automation', 'Python', 'Security Research'],
     links: {
       github: 'https://github.com/Mohdanass',
     },
   },
+
   {
-    title: 'SIEM Log Analysis & Detection Engineering Lab',
+    title: 'Active Directory Attack & Defense Lab',
     description:
-      'Blue-team project analyzing SSH brute force, SQLi attempts, XSS payloads, and Windows event logs using Wazuh/Splunk. Built custom detection rules, alerting pipelines, and dashboards for SOC-style monitoring.',
-    image: '/images/projects/siem-lab.webp',
+      'Enterprise Active Directory security lab built to study red team and blue team techniques including Kerberoasting, AS-REP Roasting, Pass-the-Hash attacks, privilege escalation, lateral movement and defensive monitoring mapped to MITRE ATT&CK.',
+    image: '/images/projects/active-directory.webp',
     status: 'Active Lab',
-    statusColor: 'bg-cyber-green',
-    tags: ['SIEM', 'Wazuh', 'Splunk', 'Blue Team', 'Log Analysis', 'Detection Engineering'],
-    links: {
-      github: 'https://github.com/Mohdanass',
-    },
-  },
-  {
-    title: 'PCAP Attack Analysis – Full Kill Chain Investigation',
-    description:
-      'Complete network forensics case examining attacker behavior across scanning, exploitation, reverse shell traffic, credential access, and command execution. Timeline reconstruction performed using Wireshark and manual packet analysis.',
-    image: '/images/projects/pcap-analysis.webp',
-    status: 'Completed',
     statusColor: 'bg-cyber-cyan',
-    tags: ['Wireshark', 'Network Forensics', 'Incident Response', 'Blue Team'],
+    tags: ['Active Directory', 'Red Team', 'Blue Team', 'Kerberos', 'MITRE ATT&CK'],
     links: {
       github: 'https://github.com/Mohdanass',
     },
   },
+
   {
-    title: 'Linux & Windows Hardening Project',
+    title: 'AI Malware Sentinel – Android Malware Detection',
     description:
-      'System hardening project implementing secure SSH configuration, firewall policies, password rules, service isolation, audit logging, and Sysmon-based monitoring. Mapped defensive controls using MITRE ATT&CK techniques.',
-    image: '/images/projects/system-hardening.webp',
+      'Android malware detection platform using static analysis and machine learning techniques. APK reverse engineering performed with Androguard and a Random Forest model implemented to classify suspicious application behavior.',
+    image: '/images/projects/ai-malware.webp',
     status: 'Completed',
     statusColor: 'bg-cyber-green',
-    tags: ['Hardening', 'Blue Team', 'Linux Security', 'Windows Security', 'MITRE ATT&CK'],
+    tags: ['Android Security', 'Malware Analysis', 'Machine Learning', 'Static Analysis'],
     links: {
       github: 'https://github.com/Mohdanass',
     },
   },
+
   {
-    title: 'Android Payload & RAT Analysis Lab (AhMyth + FatRat)',
+    title: 'Network Intrusion Detection System (Snort)',
     description:
-      'Controlled lab testing of Android RAT payloads to understand C2 communication, network traffic patterns, persistence behavior, and defensive countermeasures. Includes analysis notes and PCAP-based investigation.',
-    image: '/images/projects/android-rat.webp',
-    status: 'Research',
+      'Designed and configured a Snort-based intrusion detection system to monitor malicious traffic and detect scanning activity, brute force attempts, malware indicators and command-and-control communication.',
+    image: '/images/projects/snort-ids.webp',
+    status: 'Completed',
     statusColor: 'bg-cyber-cyan',
-    tags: ['Android Security', 'Red Team', 'Malware Analysis', 'RAT', 'C2'],
+    tags: ['Snort', 'IDS', 'Network Security', 'Detection Engineering'],
     links: {
       github: 'https://github.com/Mohdanass',
     },
   },
+
+  {
+    title: 'Command and Control Traffic Analysis (Sliver)',
+    description:
+      'Analyzed command-and-control communication patterns to identify recurring beaconing behavior and suspicious outbound traffic during simulated attack scenarios using packet inspection and network traffic analysis.',
+    image: '/images/projects/c2-analysis.webp',
+    status: 'Completed',
+    statusColor: 'bg-cyber-green',
+    tags: ['C2 Analysis', 'Threat Detection', 'Network Forensics', 'Red Team'],
+    links: {
+      github: 'https://github.com/Mohdanass',
+    },
+  }
 ];
